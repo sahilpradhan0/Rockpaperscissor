@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <div class="up">
+        <h1>The Rock Paper Scissor Game</h1>
+        <p>Win Five Points to Claim Victory</p>
+        <div class="pointTitle">
+
+          <div class="userPoints">
+            <p>You - <span class="myPoint">0</span></p>
+          </div>
+
+          <div class="compPoints">
+            <div class="userPoints">
+              <p>Computer - <span class="compPoint">0</span></p>
+            </div>
+          </div>
+
+          <!-- You - <span class="myPoint">0</span> Computer -
+          <span class="compPoint">0</span> -->
+
+
+        </div>
+
+      </div>
+      <div class="afterGameOver">
+        <h3 id="afterGameOver">hi</h3>
+      </div>
+      <button class="btn">Play Again</button>
+
+      <div class="rps">
+        <div class="user">
+          <p id="uChoice"></p>
+        </div>
+        <h1>VS</h1>
+        <div class="computer">
+          <p id="cChoice"></p>
+        </div>
+        <!-- <div class="reload">
+                <i class="fa fa-refresh rel"></i>
+            </div> -->
+      </div>
+      <div class="movescount">
+        <p>Total Moves: <span class="fixed">10</span></p>
+        <p>Moves Left: <span class="moves">10</span></p>
+      </div>
+      <h1 id="winner" class="winner"></h1>
+
+      <div class="rps icons">
+        <p onclick="userClick('👊')">👊 </p>
+        <p onclick="userClick('🖐')">🖐</p>
+        <p onclick="userClick('✌')">✌</p>
+      </div>
+
+    </div>
+  </body>
+</html>

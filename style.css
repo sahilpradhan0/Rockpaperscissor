@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: poppins; */
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+body{
+    max-height: 100vh;
+    background-color: #4f5b67;
+}
+.game{
+    min-height: 100%;
+    max-width: 100vw;
+    background-color: #a7a9ac31;
+    border: 4px solid #a7a9ac31;
+    box-shadow: 0px 1px 0px 3px #6b7987;
+    margin: 10%;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+.rps{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #8d8f9271;
+    border: 0px solid #1d1e1f71;
+    border-radius: 30px;
+}
+.icons p{
+    background-color: #c2c4c771;
+    font-size: 3.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+}
+.up p{
+    margin: 10px 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+.user, .computer{
+    margin-top: 10px;
+    display: flex;
+    border: 2px solid black;
+    max-width: 70px;
+    width: 90px;
+    height: 90px;
+    max-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.computer{
+    margin-top: 10px;
+    display: flex;
+}
+
+#winner{
+    margin-bottom: 20px;
+}
+#uChoice{
+    font-size: 3.1rem;
+    background-color: rgba(230, 225, 216, 0.555);
+    border-radius: 50%;
+}
+#cChoice{
+    font-size: 3.1rem;
+    background-color: rgba(230, 225, 216, 0.555);
+    border-radius: 50%;
+}
+.myPoint,.compPoint, .moves, .fixed{
+    /* margin-right: 35px; */
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 25%;
+}
+.movescount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.movescount p{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+.Result{
+    text-align: center;
+}
+
+.btn{
+    display: none;
+    margin: auto;
+    background-color: #d61313;
+    max-width: 30%;
+    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.pointTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pointTitle p{
+    font-size: 1.4rem;
+    margin: 10px 15px;
+}
+.afterGameOver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 8px;
+}
+#afterGameOver{
+    color:rgb(238, 221, 32)
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .icons p{
+        font-size: 2.1rem;
+    }
+    .up p{
+        font-size: 1.1rem;
+    }
+    .up h1{
+        margin-bottom: 10px;
+    }
+    .movescount p{
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    .game{
+        position: relative;
+        top: 50%;
+    }
+    #uChoice,#cChoice{
+        font-size: 2.1rem;
+    }
+    .user, .computer{
+        width: 50px;
+        height: 50px;
+    }
+    .pointTitle p{
+        font-size: 0.8rem;
+    }
+    .btn{
+        max-width: 30%;
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 300px) {
+    #uChoice,#cChoice{
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 0.5rem;
+        padding: 8px;
+    }
+}
